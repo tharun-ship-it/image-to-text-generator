@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.icons8.com/fluency/96/camera.png" alt="Image-to-Text Generator Logo" width="100"/>
+  <img src="https://img.icons8.com/fluency/96/picture.png" alt="Image-to-Text Generator Logo" width="100"/>
 </p>
 
 <h1 align="center">🖼️ Image-to-Text Generator</h1>
@@ -42,7 +42,8 @@ The pipeline automatically:
 - Processes images through a **ViT-L/16** vision encoder with 384×384 resolution
 - Applies **Image-Text Contrastive (ITC)** and **Image-Text Matching (ITM)** learning
 - Generates fluent captions using an **autoregressive text decoder**
-- Supports **conditional captioning** with custom prompts
+- Supports **batch processing** of up to **25 images** simultaneously
+- Provides **ZIP download** with captioned images and summary file
 
 **Key Achievement:** Achieved **39.7% BLEU-4** and **136.7 CIDEr** — **+22.5% improvement** over ViT-GPT2 baseline!
 
@@ -56,18 +57,71 @@ The pipeline automatically:
 
 ## 📱 App Preview
 
-### Caption Generation
-Upload any image and get AI-generated captions with state-of-the-art accuracy.
+### Main Interface
+Upload up to 25 images and generate AI-powered captions with state-of-the-art accuracy.
 
 <p align="center">
-  <img src="assets/screenshots/caption_examples.png" alt="Caption Generation Demo" width="700"/>
+  <img src="assets/screenshots/app_main_ui.png" alt="Main Interface" width="800"/>
 </p>
 
-### Attention Visualization
-See how the model focuses on different image regions when generating captions.
+### Image Preview
+Preview all uploaded images before generating captions.
 
 <p align="center">
-  <img src="assets/screenshots/attention_viz.png" alt="Attention Visualization" width="700"/>
+  <img src="assets/screenshots/app_image_preview.png" alt="Image Preview" width="800"/>
+</p>
+
+### Caption Generation Examples
+See how the model generates accurate, descriptive captions for different image types.
+
+<table>
+<tr>
+<td width="50%">
+
+**🍽️ Food Recognition**
+<img src="assets/screenshots/caption_food.png" alt="Food Caption"/>
+
+*"There is a bowl of food with meat, vegetables and eggs"*
+
+</td>
+<td width="50%">
+
+**🌆 Urban Scenes**
+<img src="assets/screenshots/caption_city.png" alt="City Caption"/>
+
+*"Araful view of the city skyline with skyscrapers and buildings"*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**🚗 Vehicle Detection**
+<img src="assets/screenshots/caption_car.png" alt="Car Caption"/>
+
+*"A close up of the front end of a black mustang"*
+
+</td>
+<td width="50%">
+
+**🏖️ Nature & Landscapes**
+<img src="assets/screenshots/caption_beach.png" alt="Beach Caption"/>
+
+*"A close up of the sun setting over an ocean beach"*
+
+</td>
+</tr>
+</table>
+
+### Download Results
+Download all captioned images as a ZIP file with embedded captions and summary text file.
+
+<p align="center">
+  <img src="assets/screenshots/caption_cat_download.png" alt="Cat Caption and Download" width="800"/>
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/app_download_section.png" alt="Download Section" width="800"/>
 </p>
 
 ---
@@ -103,14 +157,19 @@ streamlit run app.py
 | Feature | Description |
 |---------|-------------|
 | **State-of-the-Art Accuracy** | 39.7% BLEU-4, 136.7 CIDEr — best-in-class performance |
+| **Batch Processing** | Upload and process up to **25 images** simultaneously |
+| **ZIP Download** | Download all images with captions embedded + summary text file |
 | **BLIP Architecture** | Unified vision-language pre-training with CapFilt bootstrapping |
 | **Conditional Captioning** | Guide output with custom prompts like "a photograph of..." |
 | **Real-time Inference** | Fast caption generation with beam search optimization |
-| **Web Interface** | Beautiful Streamlit-based UI with professional design |
+| **Web Interface** | Beautiful Streamlit-based UI with professional pink theme |
 | **Configurable Parameters** | Adjustable beam width, caption length, and generation settings |
 
 ### 💡 Key Capabilities
 
+- **Batch Processing**: Process up to 25 images in one session (2GB max total size)
+- **ZIP Export**: Download captioned images with black text on white background
+- **Summary File**: Get a text file with all captions listed sequentially (Image 1 to 25)
 - **CapFilt Bootstrapping**: Cleaner training data for more natural captions
 - **ITC + ITM Learning**: Image-Text Contrastive and Matching for better alignment
 - **Conditional Generation**: Control caption style with custom prompts
@@ -350,6 +409,10 @@ generation:
 
 preprocessing:
   image_size: 384
+
+batch_processing:
+  max_images: 25
+  max_total_size: "2GB"
 ```
 
 ### API Reference
