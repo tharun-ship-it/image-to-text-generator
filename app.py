@@ -796,6 +796,6 @@ if st.session_state.processed and st.session_state.results:
         
         st.markdown("""
         <p style="text-align: center; font-size: 0.8rem; color: #64748b; margin-top: 0.5rem;">
-            ZIP contains all images with captions (black text on white) + summary text file
+            ZIP contains all images with captions and summary text file
         </p>
         """, unsafe_allow_html=True)
