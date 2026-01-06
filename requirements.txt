@@ -1,0 +1,22 @@
+# ===========================================
+# BLIP Image Captioning - Requirements
+# ===========================================
+# Streamlit Cloud Deployment
+# Author: Tharun Ponnam
+# ===========================================
+
+# Web Framework
+streamlit>=1.28.0
+
+# Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Transformers & BLIP Model
+transformers>=4.35.0
+
+# Image Processing
+Pillow>=10.0.0
+
+# Numerical Computing
+numpy>=1.24.0
