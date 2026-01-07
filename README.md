@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.icons8.com/3d-fluency/94/image.png" alt="Image-to-Text Generator Logo" width="100"/>
+  <img src="assets/logo.png" alt="Image-to-Text Generator Logo" width="100"/>
 </p>
 
 <h1 align="center">🖼️ Image-to-Text Generator</h1>
