@@ -50,7 +50,7 @@ The pipeline automatically:
 ### 🔄 Pipeline Architecture
 
 <p align="center">
-  <img src="assets/screenshots/blip_architecture.png" alt="BLIP Image Captioning Pipeline"/>
+  <img src="assets/screenshots/blip_architecture.png" alt="BLIP Image Captioning Pipeline" width="900"/>
 </p>
 
 ---
@@ -61,14 +61,14 @@ The pipeline automatically:
 Upload up to 25 images and generate AI-powered captions with state-of-the-art accuracy.
 
 <p align="center">
-  <img src="assets/screenshots/app_main_ui.png" alt="Main Interface" width="800"/>
+  <img src="assets/screenshots/app_main_ui.png" alt="Main Interface" width="700"/>
 </p>
 
 ### Image Preview
 Preview all uploaded images before generating captions.
 
 <p align="center">
-  <img src="assets/screenshots/app_image_preview.png" alt="Image Preview" width="800"/>
+  <img src="assets/screenshots/app_image_preview.png" alt="Image Preview" width="700"/>
 </p>
 
 ### Caption Generation Examples
@@ -117,7 +117,7 @@ See how the model generates accurate, descriptive captions for different image t
 Download all captioned images as a ZIP file with embedded captions and summary text file.
 
 <p align="center">
-  <img src="assets/screenshots/app_download_results.png" alt="Download Results" width="800"/>
+  <img src="assets/screenshots/app_download_results.png" alt="Download Results" width="700"/>
 </p>
 
 ---
@@ -265,7 +265,7 @@ image-to-text-generator/
 ### Model Comparison
 
 <p align="center">
-  <img src="assets/screenshots/model_comparison.png" alt="Model Performance Comparison"/>
+  <img src="assets/screenshots/model_comparison.png" alt="Model Performance Comparison" width="900"/>
 </p>
 
 **BLIP-Large** significantly outperforms all baseline models across every metric, demonstrating the power of unified vision-language pre-training with CapFilt bootstrapping.
@@ -275,7 +275,7 @@ image-to-text-generator/
 ### Training Progress
 
 <p align="center">
-  <img src="assets/screenshots/training_curves.png" alt="Training Curves"/>
+  <img src="assets/screenshots/training_curves.png" alt="Training Curves" width="900"/>
 </p>
 
 BLIP's two-stage pre-training (ITC + ITM + LM) converges smoothly with consistent improvement across all metrics. The CapFilt bootstrapping provides cleaner gradients for stable training.
@@ -285,7 +285,7 @@ BLIP's two-stage pre-training (ITC + ITM + LM) converges smoothly with consisten
 ### Dataset Samples
 
 <p align="center">
-  <img src="assets/screenshots/dataset_samples.png" alt="Dataset Samples"/>
+  <img src="assets/screenshots/dataset_samples.png" alt="Dataset Samples" width="900"/>
 </p>
 
 **Visual examples from TextCaps dataset:**
