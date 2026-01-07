@@ -61,14 +61,14 @@ The pipeline automatically:
 Upload up to 25 images and generate AI-powered captions with state-of-the-art accuracy.
 
 <p align="center">
-  <img src="assets/screenshots/app_main_ui.png" alt="Main Interface" width="700"/>
+  <img src="assets/screenshots/app_main_ui.png" alt="Main Interface" width="900"/>
 </p>
 
 ### Image Preview
 Preview all uploaded images before generating captions.
 
 <p align="center">
-  <img src="assets/screenshots/app_image_preview.png" alt="Image Preview" width="700"/>
+  <img src="assets/screenshots/app_image_preview.png" alt="Image Preview" width="900"/>
 </p>
 
 ### Caption Generation Examples
@@ -79,7 +79,7 @@ See how the model generates accurate, descriptive captions for different image t
 <td width="50%">
 
 **🍽️ Food Recognition**
-<img src="assets/screenshots/caption_food.png" alt="Food Caption"/>
+<img src="assets/screenshots/caption_food.png" alt="Food Caption" width="100%"/>
 
 *"There is a bowl of food with meat, vegetables and eggs"*
 
@@ -87,7 +87,7 @@ See how the model generates accurate, descriptive captions for different image t
 <td width="50%">
 
 **🌆 Urban Scenes**
-<img src="assets/screenshots/caption_city.png" alt="City Caption"/>
+<img src="assets/screenshots/caption_city.png" alt="City Caption" width="100%"/>
 
 *"Araful view of the city skyline with skyscrapers and buildings"*
 
@@ -97,7 +97,7 @@ See how the model generates accurate, descriptive captions for different image t
 <td width="50%">
 
 **🚗 Vehicle Detection**
-<img src="assets/screenshots/caption_car.png" alt="Car Caption"/>
+<img src="assets/screenshots/caption_car.png" alt="Car Caption" width="100%"/>
 
 *"A close up of the front end of a black mustang"*
 
@@ -105,7 +105,7 @@ See how the model generates accurate, descriptive captions for different image t
 <td width="50%">
 
 **🏖️ Nature & Landscapes**
-<img src="assets/screenshots/caption_beach.png" alt="Beach Caption"/>
+<img src="assets/screenshots/caption_beach.png" alt="Beach Caption" width="100%"/>
 
 *"A close up of the sun setting over an ocean beach"*
 
@@ -117,7 +117,7 @@ See how the model generates accurate, descriptive captions for different image t
 Download all captioned images as a ZIP file with embedded captions and summary text file.
 
 <p align="center">
-  <img src="assets/screenshots/app_download_results.png" alt="Download Results" width="700"/>
+  <img src="assets/screenshots/app_download_results.png" alt="Download Results" width="900"/>
 </p>
 
 ---
