@@ -209,12 +209,19 @@ st.markdown("""
         min-height: 50px;
         transition: all 0.3s ease;
         white-space: nowrap !important;
+        min-width: fit-content;
+        width: auto !important;
     }
     
     .stButton > button:hover {
         background: linear-gradient(135deg, #db2777 0%, #be185d 100%);
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(236, 72, 153, 0.4);
+    }
+    
+    /* Ensure button text stays on single line */
+    .stButton > button p {
+        white-space: nowrap !important;
     }
     
     .image-card {
@@ -649,8 +656,8 @@ if uploaded_files:
     </div>
     """, unsafe_allow_html=True)
     
-    # Buttons Row
-    col_btn1, col_space1, col_btn2, col_space2 = st.columns([1.5, 0.2, 0.8, 3.5])
+    # Buttons Row - smaller gap between buttons
+    col_btn1, col_space1, col_btn2, col_space2 = st.columns([1.5, 0.1, 0.8, 3.6])
     
     with col_btn1:
         generate_btn = st.button("🪄 Generate Captions", type="primary")
