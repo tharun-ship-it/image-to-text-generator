@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.icons8.com/fluency/96/picture.png" alt="Image-to-Text Generator Logo" width="100"/>
+  <img src="https://img.icons8.com/3d-fluency/94/image.png" alt="Image-to-Text Generator Logo" width="100"/>
 </p>
 
 <h1 align="center">🖼️ Image-to-Text Generator</h1>
@@ -45,12 +45,12 @@ The pipeline automatically:
 - Supports **batch processing** of up to **25 images** simultaneously
 - Provides **ZIP download** with captioned images and summary file
 
-**Key Achievement:** Achieved **39.7% BLEU-4** and **136.7 CIDEr** — **+22.5% improvement** over ViT-GPT2 baseline!
+**Key Achievement:** Achieved **39.7% BLEU-4**, **136.7 CIDEr**, and **24.1% SPICE** using BLIP-Large with 129M parameters!
 
 ### 🔄 Pipeline Architecture
 
 <p align="center">
-  <img src="assets/screenshots/architecture.png" alt="Image Captioning Pipeline"/>
+  <img src="assets/screenshots/blip_architecture.png" alt="BLIP Image Captioning Pipeline"/>
 </p>
 
 ---
@@ -117,11 +117,7 @@ See how the model generates accurate, descriptive captions for different image t
 Download all captioned images as a ZIP file with embedded captions and summary text file.
 
 <p align="center">
-  <img src="assets/screenshots/caption_cat_download.png" alt="Cat Caption and Download" width="800"/>
-</p>
-
-<p align="center">
-  <img src="assets/screenshots/app_download_section.png" alt="Download Section" width="800"/>
+  <img src="assets/screenshots/app_download_results.png" alt="Download Results" width="800"/>
 </p>
 
 ---
@@ -156,7 +152,7 @@ streamlit run app.py
 
 | Feature | Description |
 |---------|-------------|
-| **State-of-the-Art Accuracy** | 39.7% BLEU-4, 136.7 CIDEr — best-in-class performance |
+| **State-of-the-Art Accuracy** | 39.7% BLEU-4, 136.7 CIDEr, 24.1% SPICE |
 | **Batch Processing** | Upload and process up to **25 images** simultaneously |
 | **ZIP Download** | Download all images with captions embedded + summary text file |
 | **BLIP Architecture** | Unified vision-language pre-training with CapFilt bootstrapping |
@@ -272,7 +268,7 @@ image-to-text-generator/
   <img src="assets/screenshots/model_comparison.png" alt="Model Performance Comparison"/>
 </p>
 
-**BLIP-Large** significantly outperforms all baseline models across every metric. The **+22.5% improvement in BLEU-4** over ViT-GPT2 demonstrates the power of unified vision-language pre-training.
+**BLIP-Large** significantly outperforms all baseline models across every metric, demonstrating the power of unified vision-language pre-training with CapFilt bootstrapping.
 
 ---
 
